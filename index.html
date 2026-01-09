@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>TokoModern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">TokoModern</div>
+    <div class="nav-icons">
+        <span class="icon keranjang-icon" onclick="toggleCart()">
+            🛒
+            <span id="cartCount">0</span>
+        </span>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Koleksi Terbaru</h2>
+        <p>Fashion modern, nyaman, dan berkualitas</p>
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section class="produk-container" id="produk">
+    <div class="produk">
+        <img src="https://via.placeholder.com/300" alt="Kaos Polos">
+        <h3>Kaos Polos</h3>
+        <p class="harga">Rp 75.000</p>
+        <button onclick="addToCart('Kaos Polos', 75000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="produk">
+        <img src="https://via.placeholder.com/300" alt="Hoodie Hitam">
+        <h3>Hoodie Hitam</h3>
+        <p class="harga">Rp 150.000</p>
+        <button onclick="addToCart('Hoodie Hitam', 150000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="produk">
+        <img src="https://via.placeholder.com/300" alt="Jaket Jeans">
+        <h3>Jaket Jeans</h3>
+        <p class="harga">Rp 220.000</p>
+        <button onclick="addToCart('Jaket Jeans', 220000)">Tambah ke Keranjang</button>
+    </div>
+</section>
+
+<!-- KERANJANG -->
+<div class="keranjang" id="cartBox">
+    <h2>Keranjang Belanja</h2>
+    <ul id="cartItems"></ul>
+
+    <h3>Data Pembeli</h3>
+    <input type="text" id="nama" placeholder="Nama Lengkap">
+    <input type="email" id="email" placeholder="Email">
+    <input type="tel" id="nohp" placeholder="Nomor WhatsApp">
+    <textarea id="alamat" placeholder="Alamat Lengkap"></textarea>
+
+    <select id="pembayaran">
+        <option value="">Metode Pembayaran</option>
+        <option>Transfer Bank</option>
+        <option>COD</option>
+        <option>E-Wallet</option>
+    </select>
+
+    <button onclick="checkout()">Checkout via WhatsApp</button>
+</div>
+
+<footer>
+    © 2026 TokoModern — All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

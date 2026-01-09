@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f7f9;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-icons .icon {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+}
+
+#cartCount {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+    height: 300px;
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("https://images.unsplash.com/photo-1521334884684-d80222895322") center 25% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.hero-content p {
+    color: #e6e6e6;
+    margin-top: 8px;
+}
+
+/* PRODUK */
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 22px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.produk {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease;
+}
+
+.produk:hover {
+    transform: translateY(-4px);
+}
+
+.produk img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.produk h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.harga {
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* KERANJANG */
+.keranjang {
+    display: none;
+    background: #fff;
+    width: 380px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.keranjang ul {
+    margin: 10px 0;
+    padding-left: 18px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+    color: #888;
+    background: #fff;
+    margin-top: 30px;
+}
